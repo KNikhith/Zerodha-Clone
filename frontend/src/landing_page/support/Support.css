@@ -1,0 +1,61 @@
+.support-hero {
+  background: #387ed1;
+  color: white;
+  padding: 5rem 0;
+}
+
+.support-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.support-top a {
+  color: white;
+  text-decoration: none;
+}
+
+.support-search {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 18px 24px;
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.quick-links a {
+  color: white;
+  text-decoration: underline;
+}
+
+.ticket-section {
+  padding: 5rem 0;
+}
+
+.ticket-card {
+  margin-bottom: 3rem;
+}
+
+.ticket-card h4 {
+  margin-bottom: 1.5rem;
+  color: #424242;
+}
+
+.ticket-card a {
+  display: block;
+  margin-bottom: .8rem;
+  text-decoration: none;
+  color: #387ed1;
+}
+
+.ticket-card a:hover {
+  text-decoration: underline;
+}
