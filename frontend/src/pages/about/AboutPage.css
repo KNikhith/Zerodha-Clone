@@ -1,0 +1,47 @@
+/* About Page */
+
+/* HeroSection.jsx */
+.about-parasRow p {
+    line-height: 1.75;
+}
+
+/* Team.jsx */
+.team-photoSection img {
+    width: 55%;
+    border-radius: 100%;
+}
+.team-photoSection p {
+    font-size: 0.92rem;
+    margin-top: 1rem;
+}
+.team-rightParasSection p {
+    line-height: 1.75;
+    margin-left: -4rem;
+    margin-right: 4rem;
+}
+.team-rightParasSection p a {
+    text-decoration: none;
+    font-weight: 500;
+}
+.team-allPeople img {
+    width: 66%;
+    border-radius: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .about-parasRow {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .about-parasRow p {
+        padding: 0 1rem;
+    }
+    .about-heading {
+        padding: 0 3.75rem;
+    }
+    .team-rightParasSection p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

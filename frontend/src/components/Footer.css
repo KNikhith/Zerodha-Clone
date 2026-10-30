@@ -1,0 +1,82 @@
+/* Footer.jsx */
+footer .col-md .footerLogo {
+    width: 59%;
+    margin-bottom: 1.2rem;
+}
+
+footer .col-md h5 {
+    font-size: 1.13rem;
+    margin-bottom: 1.2rem;
+}
+
+footer .col-md .f-copyrightInfo {
+    font-size: 0.77rem;
+    line-height: 1.77;
+    margin-bottom: 0.4rem;
+}
+
+.f-socialMediaIcons a {
+    text-decoration: none;
+    margin-right: 1.4rem;
+    line-height: 3.2;
+}
+
+.f-socialMediaIcons a i {
+    color: var(--secondaryTextColor);
+    font-size: 1.25rem;
+}
+
+.f-socialMediaIcons a i:hover {
+    color: var(--thirdTextColor);
+    font-size: 1.28rem;
+}
+
+.f-mainLinks a {
+    text-decoration: none;
+    color: var(--secondaryTextColor);
+    font-size: 0.99rem;
+    font-weight: 500;
+    line-height: 2.1;
+}
+
+.footer-lastParas .f-lastPara {
+    color: rgb(155, 155, 155);
+    font-size: 0.64rem;
+    font-weight: 500;
+    line-height: 1.9;
+}
+
+.footer-lastParas .f-lastPara a {
+    text-decoration: none;
+}
+
+.footer-lastLinks .f-lastLink {
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+    font-weight: 500;
+    font-size: 0.77rem;
+    margin-right: 1.3rem;
+}
+
+.footer-lastLinks {
+    text-align: center;
+}
+
+.f-number .number {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: 0.3rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    footer .col-md .footerLogo {
+        width: 38%;
+    }
+    footer .col-md h5 {
+        margin-top: 1.83rem;
+    }
+    .f-socialMediaIcons a {
+        line-height: 2.9;
+    }
+}

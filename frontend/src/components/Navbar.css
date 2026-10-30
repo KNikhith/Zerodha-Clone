@@ -1,0 +1,38 @@
+/* Navbar */
+
+.navbarNav {
+    background-color: #fff !important;
+    padding: 0.55rem 0;
+}
+
+.navbarLogo {
+    width: 23.23%;
+}
+
+.nav-item {
+    margin-left: 2.45rem;
+    margin-right: -0.8rem;
+    padding-top: 0.5rem;
+}
+
+.nav-item .nav-link {
+    color: var(--thirdTextColor) !important;
+    font-size: 0.91rem;
+    font-weight: 500;
+}
+
+.nav-item .nav-link .navbar-toggler-icon {
+    color: var(--textColor);
+    font-size: 1.01rem;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbarLogo {
+        width: 28.5%;
+    }
+    .navbar-toggler-icon {
+        margin-top: -2.75rem;
+    }
+}

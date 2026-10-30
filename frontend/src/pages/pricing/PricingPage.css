@@ -1,0 +1,131 @@
+/* Pricing Page */
+
+/* HeroSection */
+.pricing-hero h1 {
+  font-size: 2.75rem;
+}
+.pricing-hero .topHeadingP {
+  color: rgb(155, 155, 155);
+}
+.pricingComp img {
+  width: 69%;
+  margin: 2.45rem 0 1.9rem 0;
+}
+.pricingComp p {
+  color: var(--secondaryTextColor);
+  margin-top: 1.45rem;
+  line-height: 1.75;
+}
+
+/* BrokerageDetails.jsx */
+.pricing-brokerage .tabs h4 {
+  color: #00e;
+  opacity: 0.8;
+  cursor: pointer;
+  margin: 0.3rem 0 0 0;
+  padding: 0.72rem 2.55rem;
+  transition: border-bottom 0.15s ease-in-out;
+}
+.pricing-brokerage .tabs h4:nth-of-type(2) {
+  padding: 0.72rem 1.9rem;
+}
+.pricing-brokerage .tabs h4:nth-of-type(3) {
+  padding: 0.72rem 1.1rem;
+}
+.pricing-brokerage .tabs h4:hover {
+  color: var(--secondaryTextColor);
+}
+.pricing-brokerage .tabs .active {
+  opacity: 1;
+  color: var(--secondaryTextColor) !important;
+  border-bottom: 2.5px solid #00e;
+}
+.pricing-brokerage .tabsContent {
+  width: 96%;
+  margin-left: 1.4rem;
+}
+
+/* BrokerageContent.jsx */
+.brokerageTable {
+  font-size: 14px;
+}
+.brokerageTable thead tr th {
+  font-weight: 500;
+  padding: 0.88rem;
+}
+.brokerageTable tbody tr .label {
+  color: var(--secondaryTextColor);
+  padding: 0.62rem 1.2rem 1.25rem 0.8rem;
+}
+.brokerageTable tbody tr .value {
+  line-height: 1.7;
+  padding: 0.62rem 0.98rem 1.25rem 0.9rem;
+}
+
+/* Charges.jsx */
+.chargesSection .description {
+  font-size: 0.75rem;
+  padding: 0.05rem 0.23rem;
+  line-height: 1.75;
+}
+.chargesSection .description a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.chargesSection .description a:hover {
+  color: var(--primaryTextColor);
+}
+.chargesSection .description ul li {
+  line-height: 2.02;
+  margin-left: -0.75rem;
+}
+.chargesTable table {
+  font-size: 14px;
+  margin-top: 0.9rem;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.chargesTable table thead {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.chargesTable table thead tr th {
+  font-weight: 500;
+  padding: 0.82rem 1.65rem;
+}
+.chargesTable table tbody tr td {
+  padding: 0.82rem 1.65rem;
+  padding-right: 2rem;
+}
+.chargesTable table tbody tr td .freeTag {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #4caf50;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .pricingComp img {
+    width: 39%;
+    margin-bottom: 0.55rem;
+  }
+  .pricing-brokerage .tabs h4 {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 18px;
+  }
+  .pricing-brokerage .tabs .active {
+    border-bottom: 2.4px solid #00f;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  .brokerageTable thead th:nth-of-type(4),
+  .brokerageTable thead th:nth-of-type(5),
+  .brokerageTable tbody td:nth-of-type(4),
+  .brokerageTable tbody td:nth-of-type(5) {
+    display: none;
+  }
+}

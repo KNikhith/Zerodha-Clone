@@ -1,0 +1,152 @@
+/* ProductsPage */
+
+/* HeroSection.jsx */
+.productsPage-hero h1 {
+  font-size: 2.75rem;
+}
+.productsPage-hero a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* LeftImgSection.jsx & RightImgSection.jsx */
+.leftImgSection .firstHalf img {
+  margin-left: 2.5rem;
+}
+.rightImgSection .secondHalf img {
+  margin-left: 4rem;
+  margin-top: -1rem;
+  width: 130%;
+}
+.leftImgSection .secondHalf {
+  padding-left: 1.5rem;
+}
+.rightImgSection .firstHalf {
+  margin-left: 0.5rem;
+  margin-top: 5.5rem !important;
+}
+.leftImgSection .secondHalf p,
+.rightImgSection .firstHalf p {
+  line-height: 1.77;
+}
+.leftImgSection .secondHalf .firstLinks {
+  margin-bottom: 1.5rem;
+}
+.leftImgSection .secondHalf .firstLinks a,
+.rightImgSection .firstHalf .firstLink a {
+  text-decoration: none;
+  margin-right: 4.25rem;
+}
+.leftImgSection .secondHalf .secondLinks a {
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.leftImgSection .secondHalf .secondLinks a img {
+  width: 45%;
+}
+.leftImgSection .secondHalf .secondLinks a .secondImg {
+  width: 40%;
+}
+.fa-long-right-arrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 0.22rem;
+  opacity: 0.4;
+  color: rgb(0, 0, 238);
+}
+.kiteConnect {
+  margin-top: -8.25rem;
+}
+.kiteConnect img {
+  width: 125% !important;
+  padding-top: 7.55rem;
+  padding-left: 1.8rem;
+}
+.varsityMobile .firstHalf img {
+  margin-left: 6rem;
+  margin-top: -3.7rem;
+}
+.varsityMobile .secondHalf {
+  margin-top: 0.7rem;
+}
+.varsityMobile .secondHalf a img {
+  margin-top: -4rem;
+}
+
+/* Universe.jsx */
+.universeLogos:nth-of-type(1) img {
+  /* Zerodha fund house logo */
+  width: 62%;
+  margin: -0.5rem 0 0 4.6rem;
+}
+.universeLogos:nth-of-type(2) img {
+  /* Sensibull logo */
+  width: 70%;
+  margin: 0.15rem 0 0.4rem 4.2rem;
+}
+.universeLogos:nth-of-type(3) img,
+.universeLogos:nth-of-type(6) img {
+  /* Tijori logo & Ditto logo */
+  width: 45%;
+  margin: -0.5rem 0 -0.1rem 6rem;
+}
+.universeLogos:nth-of-type(4) img {
+  /* Streak logo */
+  width: 52%;
+  margin: -0.5rem 0 -0.2rem 5.5rem;
+}
+.universeLogos:nth-of-type(5) img {
+  /* Smallcase logo */
+  width: 65%;
+  margin: -0.95rem 0 -0.15rem 4.65rem;
+}
+.universeLogos p {
+  font-size: 0.77rem;
+  margin: 1.25rem 0 5rem 1.55rem;
+}
+.universeLogos:nth-of-type(2) p,
+.universeLogos:nth-of-type(5) p {
+  margin-left: 2rem;
+}
+.universeSignUpBtn button {
+  margin: -1.75rem 0 5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .leftImgSection .firstHalf img,
+  .rightImgSection .secondHalf img {
+    margin-left: 0;
+    padding: 0.25rem;
+    width: 99% !important;
+  }
+  .leftImgSection {
+    margin-top: -8rem;
+  }
+  .leftImgSection .secondHalf {
+    margin-top: -10rem;
+  }
+  .rightImgSection {
+    margin-top: -14rem;
+  }
+  .rightImgSection .secondHalf {
+    margin-top: -5rem;
+    margin-bottom: 6rem;
+  }
+  .kiteConnect img {
+    margin-top: 0.8rem !important;
+    margin-bottom: 4rem;
+  }
+  .varsityMobile .firstHalf img {
+    width: 95% !important;
+    margin-bottom: 0.8rem;
+  }
+  .leftImgSection .secondHalf .secondLinks img {
+    width: 38% !important;
+  }
+  .universeLogos {
+    padding: 2rem;
+  }
+  .rightImgSection .secondHalf img {
+    width: 110% !important;
+  }
+}

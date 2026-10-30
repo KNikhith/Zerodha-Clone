@@ -1,25 +1,90 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./main.css";
 
-import App from "./App";
-import ErrorBoundary from "./components/common/ErrorBoundary";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  LayoutWithNavbarAndFooter,
+  LayoutWithoutFooter,
+} from "./components/Layouts.jsx";
+import HomePage from "./pages/home/HomePage.jsx";
+import SignupPage from "./pages/signup/SignupPage.jsx";
+import LoginPage from "./pages/signup/LoginPage.jsx";
+import AboutPage from "./pages/about/AboutPage.jsx";
+import ProductsPage from "./pages/products/ProductsPage.jsx";
+import PricingPage from "./pages/pricing/PricingPage.jsx";
+import SupportPage from "./pages/support/SupportPage.jsx";
+import NotFound from "./components/NotFound.jsx";
 
-import "./index.css";
-import "react-toastify/dist/ReactToastify.css";
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
     <BrowserRouter>
-      <ErrorBoundary>
-        <App />
-        <ToastContainer
-          position="top-right"
-          autoClose={3000}
-          theme="light"
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <LayoutWithNavbarAndFooter>
+              <HomePage />
+            </LayoutWithNavbarAndFooter>
+          }
         />
-      </ErrorBoundary>
+        <Route
+          path="/signup"
+          element={
+            <LayoutWithoutFooter>
+              <SignupPage />
+            </LayoutWithoutFooter>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <LayoutWithoutFooter>
+              <LoginPage />
+            </LayoutWithoutFooter>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <LayoutWithNavbarAndFooter>
+              <AboutPage />
+            </LayoutWithNavbarAndFooter>
+          }
+        />
+        <Route
+          path="/products"
+          element={
+            <LayoutWithNavbarAndFooter>
+              <ProductsPage />
+            </LayoutWithNavbarAndFooter>
+          }
+        />
+        <Route
+          path="/pricing"
+          element={
+            <LayoutWithNavbarAndFooter>
+              <PricingPage />
+            </LayoutWithNavbarAndFooter>
+          }
+        />
+        <Route
+          path="/support"
+          element={
+            <LayoutWithoutFooter>
+              <SupportPage />
+            </LayoutWithoutFooter>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <LayoutWithNavbarAndFooter>
+              <NotFound />
+            </LayoutWithNavbarAndFooter>
+          }
+        />
+      </Routes>
     </BrowserRouter>
-  </React.StrictMode>
+  </StrictMode>,
 );
