@@ -1,11 +1,18 @@
-import Hero from "./Hero";
-import CreateTicket from "./CreateTicket";
+import "./SupportPage.css";
+import CreateTicket from "./CreateTicket.jsx";
+import HeroSection from "./HeroSection.jsx";
+import SupportFooter from "./SupportFooter.jsx";
 
 function SupportPage() {
   return (
     <>
-      <Hero />
-      <CreateTicket />
+      <div className="container-fluid" id="supportHero">
+        <HeroSection />
+      </div>
+      <div className="container pb-5">
+        <CreateTicket />
+      </div>
+      <SupportFooter />
     </>
   );
 }
