@@ -1,24 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import { Toaster } from "react-hot-toast";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./main.css";
 
-import App from "./App";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
 
-import "./styles/global.css";
-import "./styles/layout.css";
-import "./styles/buttons.css";
-import "./styles/tables.css";
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
     <BrowserRouter>
-      <Toaster
-        position="top-right"
-        reverseOrder={false}
-      />
-
-      <App />
+      <Routes>
+        <Route path="/*" element={<HomePage />} />
+      </Routes>
     </BrowserRouter>
-  </React.StrictMode>
+  </StrictMode>,
 );
