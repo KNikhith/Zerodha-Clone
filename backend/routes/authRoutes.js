@@ -5,7 +5,7 @@ import {
   logout,
   getMe,
   verifyUser,
-} from "../controllers/authController.js";
+} from "../controllers/authControllers.js";
 
 import {protect} from "../middleware/authMiddleware.js";
 
