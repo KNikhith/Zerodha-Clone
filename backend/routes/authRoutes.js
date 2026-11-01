@@ -1,24 +1,20 @@
-import express from "express";
-import {
+const router = require("express").Router();
+const {
+  sendOtp,
+  verifyOtp,
   signup,
   login,
   logout,
-  getMe,
-  verifyUser,
-} from "../controllers/authControllers.js";
+} = require("../controllers/authControllers");
+const authenticateUser = require("../middlewares/validateUser");
 
-import {protect} from "../middleware/authMiddleware.js";
-
-const router = express.Router();
-
+router.post("/send-otp", sendOtp);
+router.post("/verify-otp", verifyOtp);
 router.post("/signup", signup);
-
 router.post("/login", login);
-
 router.post("/logout", logout);
+router.get("/dashboard", authenticateUser, (req, res) => {
+  res.json({ message: "Welcome to Dashboard", user: req.user });
+});
 
-router.get("/me", protect, getMe);
-
-router.get("/verify", protect, verifyUser);
-
-export default router;
+module.exports = router;
